@@ -11,5 +11,4 @@ int main () {
     cout << "\aYou anget " << code << "...\n";
     cout << "\acode verified! Proceed with Plan z3! \n";
     return 0;
-
 }
