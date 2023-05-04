@@ -7,7 +7,7 @@
 int main () {
     using namespace std;
     // char name2[] = "C+owboy";
-    int arr[1] = { 12 };
+    // int arr[1] = { 12 };
     // 这是错误的写法！
     // arr[0] = 12;
     // string a = "zack wang";

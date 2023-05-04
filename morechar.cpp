@@ -6,8 +6,8 @@ int main () {
     using namespace std;
     char ch = 'M';
     int i = ch;
-    cout << "asc II code for " << ch << " is " << i << endl;
-    ch = ch + 1;
+//    cout << "asc II code for " << ch << " is " << i << endl;
+//    ch = ch + 1;
     i = ch;
     cout << "asc II code for " << ch << " is " << i << endl;
     cout << "display char ch using cout.put(ch):";
