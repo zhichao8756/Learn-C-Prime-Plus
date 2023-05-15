@@ -6,8 +6,8 @@
 
 int main() {
     using namespace std;
-    const int size = 16;
-    array<long long , size> factorials;
+    const int size = 100;
+    array<long double , size> factorials;
     factorials[1] = factorials[0] = 1LL;
     cout << "this is " << factorials[0];
     for (int i = 2; i < size; ++i) {
