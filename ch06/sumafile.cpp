@@ -20,7 +20,7 @@ int main() {
     double value;
     double sum = 0.0;
     int count = 0;
-    inFile >> value;
+    inFile >> value; // read first value
     while (inFile.good()) {
         ++count;
         sum += value;

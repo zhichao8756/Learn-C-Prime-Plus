@@ -116,13 +116,12 @@ int main() {
     int count = 0;
 
     string words = {};
-    cin >> words;
+    getline(cin, words);
     for (int i = 0; words != "done"; ++i) {
         cout << words;
         cout << i;
         count++;
-         cin >> words;
-    }
+        getline(cin, words);    }
     cout << words << endl;
     cout << "total word is " << count;
     return 0;

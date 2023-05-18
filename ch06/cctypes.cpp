@@ -28,6 +28,7 @@ int main() {
         }
         cin.get(ch);
     }
+    cout << ch;
     cout << chars << " letters, "
          << whitespace << " whitespace, "
          << digits << " digits, "
