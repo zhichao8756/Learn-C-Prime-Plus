@@ -70,7 +70,6 @@ int main() {
     return 0;
 }*/
 
-/*
 int main() {
     struct carProduct {
         string brand;
@@ -95,7 +94,7 @@ int main() {
     }
     delete [] arr;
     return 0;
-}*/
+}
 /*
 int main() {
     using namespace std;
@@ -111,6 +110,7 @@ int main() {
     cout << "total word is " << count;
     return 0;
 }*/
+/*
 int main() {
     using namespace std;
     int count = 0;
@@ -125,4 +125,4 @@ int main() {
     cout << words << endl;
     cout << "total word is " << count;
     return 0;
-}
+}*/
