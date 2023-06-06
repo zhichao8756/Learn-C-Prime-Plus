@@ -3,6 +3,7 @@
 //
 #include "iostream"
 #include "string"
+#include "cctype"
 using namespace std;
 /*
 void printString(const char * str, int n);
@@ -16,6 +17,7 @@ void printString(const char * str, int n) {
         std::cout << str << std::endl;
     }
 }*/
+/*
 struct CandyBar {
     string brand;
     double weight;
@@ -44,4 +46,22 @@ void show_candy(const CandyBar * snacks) {
     cout << snacks->brand << endl;
     cout << snacks->weight << endl;
     cout << snacks->calories << endl;
+}*/
+string str_toupper(string &str);
+int main() {
+    string str;
+    getline(cin, str);
+    while (str != "q") {
+        string upperStr = str_toupper(str);
+        cout << upperStr << endl;
+        getline(cin, str);
+    }
+    cout << "Bye;";
+    return 0;
+}
+string str_toupper(string &str) {
+    for (int i = 0; i < str.size(); ++i) {
+       str[i] = toupper(str[i]);
+    }
+    return str;
 }
