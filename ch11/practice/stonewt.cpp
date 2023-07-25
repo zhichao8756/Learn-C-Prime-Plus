@@ -34,24 +34,47 @@ void Stonewt::show_lbs() const
 {
     cout << pounds << " pounds\n";
 }*/
-Stonewt Stonewt::operator+(const Stonewt &t) {
-
-    Stonewt sum;
-    sum.pounds = pounds + t.pounds;
-    sum.stone = int(sum.pounds) / Lbs_per_stn;
-    sum.pds_left = int(sum.pounds) % Lbs_per_stn + sum.pounds - int(sum.pounds);
-    return sum;
+bool operator>(const Stonewt& s1, const Stonewt& s2)
+{
+    if (s1.pounds > s2.pounds)
+        return true;
+    else
+        return false;
 }
-Stonewt Stonewt::operator*(const double n) {
-    return Stonewt(pounds * n);
+bool operator<(const Stonewt& s1, const Stonewt& s2)
+{
+    if (s1.pounds < s2.pounds)
+        return true;
+    else
+        return false;
 }
-Stonewt Stonewt::operator-(const Stonewt &t) {
-
-    Stonewt sum;
-    sum.pounds = pounds - t.pounds;
-    sum.stone = int(sum.pounds) / Lbs_per_stn;
-    sum.pds_left = int(sum.pounds) % Lbs_per_stn + sum.pounds - int(sum.pounds);
-    return sum;
+bool operator>=(const Stonewt& s1, const Stonewt& s2)
+{
+    if (s1.pounds >= s2.pounds)
+        return true;
+    else
+        return false;
+}
+bool operator<=(const Stonewt& s1, const Stonewt& s2)
+{
+    if (s1.pounds <= s2.pounds)
+        return true;
+    else
+        return false;
+}
+bool operator==(const Stonewt& s1, const Stonewt& s2)
+{
+    if (s1.pounds == s2.pounds)
+        return true;
+    else
+        return false;
+}
+bool operator!=(const Stonewt& s1, const Stonewt& s2)
+{
+    if (s1.pounds != s2.pounds)
+        return true;
+    else
+        return false;
 }
 std::ostream & operator<<(std::ostream & os, const Stonewt & s) {
 //    os << t.stone << " stone, " << t.pds_left << "  pounds\n";

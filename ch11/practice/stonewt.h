@@ -22,9 +22,12 @@ public:
     // void show_lbs() const;        // show weight in pounds format
     // void show_stn() const;        // show weight in stone format
     void SetFormat(Format form);
-    Stonewt operator+(const Stonewt & t);
-    Stonewt operator*(const double n);
-    Stonewt operator-(const Stonewt & t);
+    friend bool operator>(const Stonewt& s1, const Stonewt& s2);
+    friend bool operator<(const Stonewt& s1, const Stonewt& s2);
+    friend bool operator>=(const Stonewt& s1, const Stonewt& s2);
+    friend bool operator<=(const Stonewt& s1, const Stonewt& s2);
+    friend bool operator==(const Stonewt& s1, const Stonewt& s2);
+    friend bool operator!=(const Stonewt& s1, const Stonewt& s2);
 
     friend std::ostream & operator<<(std::ostream & os, const Stonewt & t);
 

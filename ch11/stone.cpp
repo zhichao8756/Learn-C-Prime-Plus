@@ -4,6 +4,7 @@
 #include "iostream"
 #include "stonewt.h"
 using std::cout;
+using std::endl;
 void display(const Stonewt & st, int n);
 int main () {
     Stonewt incognito(275); // uses constructor to initialize
@@ -11,17 +12,18 @@ int main () {
     Stonewt taft(21, 8);
 
     cout << "The celebrity weighed ";
-    incognito.show_stn();
+    cout << incognito;
     cout << "The detective weighed ";
-    wolfe.show_stn();
+    cout << wolfe;
+    cout << "total plus is: " << incognito + wolfe << endl;
     cout << "The President weighed ";
-    taft.show_lbs();
+    cout << taft;
     incognito = 276.8; // uses constructor for conversion
     taft = 325;         // same as taft = Stonewt(325);
     cout << "After dinner, the celebrity weighed ";
-    incognito.show_stn();
+    cout << incognito;
     cout << "After dinner, the President weighed ";
-    taft.show_lbs();
+    cout << taft;
     display(taft, 2);
     cout << "The wrestler weighed even more.\n";
     display(422, 2);
@@ -33,6 +35,6 @@ void display(const Stonewt & st, int n) {
     for (int i = 0; i < n; i++)
     {
         cout << "Wow! ";
-        st.show_stn();
+        cout << st;
     }
 }

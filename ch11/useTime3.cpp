@@ -15,7 +15,7 @@ int main() {
 
     temp = aida + tosca; // operator+()
     cout << "Aida + Tosca: " << temp << endl;
-    temp = aida* 1.17;   // member operator*()
+     temp = 1.17 * aida;   // member operator*()
     cout << "Aida * 1.17: " << temp << endl;
     cout << "10.0 * Tosca: " << 10.0 * tosca << endl;
     system("pause");
