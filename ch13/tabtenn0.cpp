@@ -1,7 +1,7 @@
 //
 // Created by EDY on 2023/8/2.
 //
-#include "tabtenn01.h"
+#include "tabtenn0.h"
 #include "iostream"
 TableTennisPlayer::TableTennisPlayer(const std::string &fn, const std::string &ln, bool ht) {
     firstname = fn;

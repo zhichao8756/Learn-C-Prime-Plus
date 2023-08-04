@@ -2,8 +2,8 @@
 // Created by EDY on 2023/8/2.
 //
 
-#ifndef TABTENN01_H
-#define TABTENN01_H
+#ifndef TABTENN0_H
+#define TABTENN0_H
 #include "string"
 using namespace std;
 class TableTennisPlayer {
