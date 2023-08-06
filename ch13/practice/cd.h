@@ -7,8 +7,8 @@
 // base class
 class Cd { // represents a CD disk
 private:
-    char performers[50];
-    char label[20];
+    char * performers;
+    char * label;
     int selections;  // number of selections
     double playtime; // playing time in minutes
 public:
@@ -21,10 +21,11 @@ public:
 };
 class Classic: public Cd {
 private:
-    char cdName[50];
+    char * cdName;
 public:
     Classic(const char * name , const char * s1, const char * s2, int n, double x);
     Classic();
+    ~Classic();
     virtual void Report() const; // reports all CD data
     Classic & operator=(const Classic & d);
 
